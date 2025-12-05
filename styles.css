@@ -236,15 +236,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.service-item:nth-child(1) {
-    transform: translateY(0);
-}
-
-.service-item:nth-child(2) {
-    transform: translateY(2rem);
-}
-
-.service-item:nth-child(3) {
+.service-item {
     transform: translateY(0);
 }
 
