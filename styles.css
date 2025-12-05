@@ -548,7 +548,6 @@ body {
 
 .made-with-palan {
     text-align: center;
-    margin-top: 4rem;
     font-size: 0.75rem;
     font-weight: 300;
     opacity: 0.4;
@@ -637,7 +636,6 @@ body {
     }
 
     .made-with-palan {
-        margin-top: 3rem;
         font-size: 0.65rem;
     }
 }
