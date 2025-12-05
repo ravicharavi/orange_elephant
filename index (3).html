@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Personal Website</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7dd3fc;
+      --muted:#94a3b8;
+      --white:#e6eef8;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(180deg,#071029 0%, #081424 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .card{
+      width:100%;
+      max-width:900px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex;
+      gap:12px;
+      align-items:center;
+    }
+    .logo{
+      width:56px;
+      height:56px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent), #60a5fa);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#042b3d;
+      font-weight:700;
+      font-size:18px;
+      box-shadow: 0 4px 18px rgba(125,211,252,0.12);
+    }
+    h1{margin:0;font-size:20px;letter-spacing:-0.2px}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+      font-size:14px;
+    }
+    main{
+      display:grid;
+      grid-template-columns: 1fr 300px;
+      gap:22px;
+      margin-top:22px;
+    }
+    .about{
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      padding:18px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .about h2{margin-top:0}
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      background:linear-gradient(90deg,var(--accent), #60a5fa);
+      color:#042b3d;
+      font-weight:700;
+      text-decoration:none;
+      box-shadow: 0 6px 20px rgba(9,24,40,0.4);
+    }
+    .side{
+      background:rgba(255,255,255,0.02);
+      padding:16px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .profile{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .avatar{
+      width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,#c7e9ff22,#7dd3fc22);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);
+      font-size:22px;
+      border:1px solid rgba(125,211,252,0.08);
+    }
+    footer{
+      margin-top:20px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      color:var(--muted);
+      font-size:13px;
+    }
+    .socials a{margin-left:10px;color:var(--muted);text-decoration:none}
+    @media (max-width:800px){
+      main{grid-template-columns:1fr}
+      .logo{width:48px;height:48px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true">YN</div>
+        <div>
+          <h1>Your Name</h1>
+          <p class="lead">Designer • Developer • Creator</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="about" id="about">
+        <h2>Hi — I'm Your Name</h2>
+        <p>Welcome to a simple test personal website. Replace this text with your bio. Mention what you do, where you're based, and the kind of work you love.</p>
+
+        <h3 id="work">Selected Work</h3>
+        <ul>
+          <li><strong>Project A</strong> — Short description of the project.</li>
+          <li><strong>Project B</strong> — Short description of the project.</li>
+          <li><strong>Project C</strong> — Short description of the project.</li>
+        </ul>
+
+        <p><a class="btn" href="#contact">Get in touch</a></p>
+      </section>
+
+      <aside class="side">
+        <div class="profile">
+          <div class="avatar">YN</div>
+          <div>
+            <div style="font-weight:700">Your Name</div>
+            <div style="font-size:13px;color:var(--muted)">Toronto, Canada</div>
+          </div>
+        </div>
+
+        <h4>Contact</h4>
+        <p style="margin:6px 0">you@domain.com</p>
+
+        <h4 style="margin-top:12px">Quick Links</h4>
+        <p style="margin:6px 0"><a href="#" style="color:var(--accent);text-decoration:none">Resume (PDF)</a></p>
+
+        <div style="margin-top:12px">
+          <strong>Download</strong>
+          <div style="margin-top:8px">
+            <!-- This link is for demonstration; replace with a real file when hosting -->
+            <a id="downloadBtn" class="btn" href="#" download="index.html">Download this page</a>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Your Name</div>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Fill year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Prepare the page HTML for download when the user clicks "Download this page".
+    document.getElementById('downloadBtn').addEventListener('click', function(e){
+      e.preventDefault();
+      // Build a minimal standalone HTML for download (this file)
+      const doc = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Your Name — Personal Website</title>
+<style>
+/* Minimal styles inlined for the downloaded file */
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;margin:24px;background:#f6f8fb;color:#0b1220}
+h1{margin:0 0 8px}
+.btn{display:inline-block;padding:8px 12px;border-radius:8px;background:#7dd3fc;text-decoration:none;color:#042b3d;font-weight:700}
+</style>
+</head>
+<body>
+<h1>Your Name</h1>
+<p>Replace this with your bio. This is the downloaded copy of the page.</p>
+<p><a class="btn" href="mailto:you@domain.com">Email me</a></p>
+</body>
+</html>`;
+      const blob = new Blob([doc], {type: 'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'index.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    });
+  </script>
+</body>
+</html>
