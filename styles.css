@@ -162,7 +162,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 6rem 0 3rem;
+    padding: 8rem 0 6rem;
     text-align: center;
 }
 
@@ -207,7 +207,7 @@ body {
 
 /* Services Section */
 .services {
-    padding: 4rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
@@ -271,7 +271,7 @@ body {
 
 /* Palan Section */
 .palan-section {
-    padding: 4rem 0;
+    padding: 6rem 0;
     position: relative;
     overflow: hidden;
 }
@@ -350,31 +350,19 @@ body {
 
 /* About Section */
 .about {
-    padding: 4rem 0;
+    padding: 6rem 0;
     position: relative;
 }
 
 .about-content {
-    max-width: 1400px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
 }
 
 .about-text-wrapper {
     position: relative;
-}
-
-.about-text {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    line-height: 1.8;
-    font-weight: 300;
-    opacity: 0.9;
-    margin: 0;
-    padding: 2rem;
+    padding: 3rem;
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     backdrop-filter: blur(10px);
@@ -382,15 +370,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.about-text-left {
-    text-align: left;
-}
-
-.about-text-right {
-    text-align: left;
-}
-
-.about-text:hover {
+.about-text-wrapper:hover {
     background: rgba(255, 255, 255, 0.04);
     border-color: rgba(255, 255, 255, 0.1);
     transform: translateY(-4px);
@@ -411,6 +391,19 @@ body {
 
 .about-text-wrapper:hover::before {
     opacity: 0.6;
+}
+
+.about-text {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.8;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+    margin-bottom: 1.5rem;
+}
+
+.about-text:last-child {
+    margin-bottom: 0;
 }
 
 /* Shooting Stars Cursor Effect */
@@ -449,7 +442,7 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
     position: relative;
 }
@@ -537,7 +530,7 @@ body {
     }
 
     .services {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     .services-content {
@@ -550,7 +543,7 @@ body {
     }
 
     .palan-section {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
     .palan-content {
@@ -564,20 +557,15 @@ body {
     }
 
     .about {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .about-text {
-        padding: 1.5rem;
+    .about-text-wrapper {
+        padding: 2rem;
     }
 
     .contact {
-        padding: 3rem 0;
+        padding: 4rem 0;
     }
 }
 
