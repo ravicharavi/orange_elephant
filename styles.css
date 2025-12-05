@@ -351,23 +351,66 @@ body {
 /* About Section */
 .about {
     padding: 4rem 0;
+    position: relative;
 }
 
 .about-content {
-    max-width: 900px;
+    max-width: 1400px;
     margin: 0 auto;
-    font-size: clamp(1rem, 2vw, 1.3rem);
-    line-height: 1.8;
-    font-weight: 300;
-    opacity: 0.85;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.about-text-wrapper {
+    position: relative;
 }
 
 .about-text {
-    margin-bottom: 2rem;
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    line-height: 1.8;
+    font-weight: 300;
+    opacity: 0.9;
+    margin: 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.about-text:last-child {
-    margin-bottom: 0;
+.about-text-left {
+    text-align: left;
+}
+
+.about-text-right {
+    text-align: left;
+}
+
+.about-text:hover {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+}
+
+.about-text-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, #a855f7, #fbbf24);
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.about-text-wrapper:hover::before {
+    opacity: 0.6;
 }
 
 /* Shooting Stars Cursor Effect */
@@ -522,6 +565,15 @@ body {
 
     .about {
         padding: 3rem 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-text {
+        padding: 1.5rem;
     }
 
     .contact {
