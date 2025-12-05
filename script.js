@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }, observerOptions);
 
     // Observe sections for animation
-    const sections = document.querySelectorAll('.services, .palan-section, .about');
+    const sections = document.querySelectorAll('.services, .palan-section, .about, .contact');
     sections.forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
